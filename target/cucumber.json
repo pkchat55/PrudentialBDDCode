@@ -1,0 +1,276 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13769351700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "validate openWetherMap page is visible when clicking on the special offers the weather info",
+        "description": "",
+        "id": "openwethermap-page;validate-openwethermap-page-is-visible-when-clicking-on-the-special-offers-the-weather-info;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2445869000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6415190100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://openweathermap.org/\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://openweathermap.org/",
+                  "offset": 19
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_navigates_to_website(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 665776500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on \"#nav-search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#nav-search",
+                  "offset": 16
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4234989500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should abke to search weather by \"#q\" and \"ABCD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#q",
+                  "offset": 39
+                },
+                {
+                  "val": "ABCD",
+                  "offset": 48
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_should_abke_to_search_weather_by_and(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 129346200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should able to see \"Not found\" and \"div[class\u003d\u0027alert alert-warning\u0027][role\u003d\u0027alert\u0027]\"for entered city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Not found",
+                  "offset": 25
+                },
+                {
+                  "val": "div[class\u003d\u0027alert alert-warning\u0027][role\u003d\u0027alert\u0027]",
+                  "offset": 41
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_should_able_to_see_and_for_entered_city(String,String)"
+            },
+            "matchedColumns": [
+              4,
+              5
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@openWthrMap"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3383206500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "validate openWetherMap page is visible when clicking on the special offers the weather info",
+        "description": "",
+        "id": "openwethermap-page;validate-openwethermap-page-is-visible-when-clicking-on-the-special-offers-the-weather-info;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2620457400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5955033700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://openweathermap.org/\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://openweathermap.org/",
+                  "offset": 19
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_navigates_to_website(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453945700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on \"#nav-search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#nav-search",
+                  "offset": 16
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3436727400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should abke to search weather by \"#q\" and \"LONDON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#q",
+                  "offset": 39
+                },
+                {
+                  "val": "LONDON",
+                  "offset": 48
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_should_abke_to_search_weather_by_and(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1870954600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should able to see \"LONDON\" and \"a\"for entered city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LONDON",
+                  "offset": 25
+                },
+                {
+                  "val": "a",
+                  "offset": 38
+                }
+              ],
+              "location": "OpenWeatherMapSteps.user_should_able_to_see_and_for_entered_city(String,String)"
+            },
+            "matchedColumns": [
+              4,
+              5
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@openWthrMap"
+          }
+        ]
+      }
+    ],
+    "name": "OpenWetherMap page",
+    "description": "",
+    "id": "openwethermap-page",
+    "keyword": "Feature",
+    "uri": "openWeatherMap.feature"
+  }
+]
