@@ -63,7 +63,6 @@ public class DriverFactory {
 			System.out.println("Unable to load browser: " + e.getMessage());
 		} finally {
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-			//contactUsPage = PageFactory.initElements(driver, ContactUs_Page.class);
 			openWthrMap = PageFactory.initElements(driver, OpenWthrMap_Page.class);
 		}
 		return driver;
