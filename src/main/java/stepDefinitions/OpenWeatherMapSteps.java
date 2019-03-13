@@ -53,25 +53,29 @@ public class OpenWeatherMapSteps extends DriverFactory {
 	}
 
 	
+	
 	@Then("^user should able to see \"([^\"]*)\" and \"([^\"]*)\"for entered city$")
 	public void user_should_able_to_see_and_for_entered_city(String messgLocator, String message) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		BasePage basePage = new BasePage();
 		
-		if(messgLocator.equals("Not found")) {
-			String weatherMesage=getDriver().findElement(By.cssSelector(message)).getText();
-			System.out.println("Your Wether message for entered city is: "+weatherMesage);
-			
-		}
-		else {
+		
 			
 			List<WebElement> options=getDriver().findElements(By.cssSelector(message));
 		
 			for (WebElement option : options) {	
-				System.out.println("All weather link info: "+option.getSize()+option.getText());
+				//System.out.println("All weather link info: "+option.getText());
+				if(option.getText().startsWith(messgLocator)) {
+					System.out.println("Entered city name is the correct one: "+option.getText());
+					Assert.assertEquals(true, option.isDisplayed());
+					Assert.assertEquals(true, option.isEnabled());
+					
+				}
+				
+				
+				
 			}
 			
-		}
+		
 		
 	}
 
