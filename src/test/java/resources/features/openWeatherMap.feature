@@ -9,6 +9,7 @@ Scenario Outline: validate openWetherMap page is visible when clicking on the sp
 	
 	Examples: 
 	| 						url   | 			button      	  |city|cityTextValue|           messgLocator                       |message  |
-	| https://openweathermap.org/ | 			#nav-search       |#q  |ABCD         |div[class='alert alert-warning'][role='alert']|Not found|
-	| https://openweathermap.org/ | 			#nav-search       |#q  |LONDON       | a                                            |LONDON   |
+	| https://openweathermap.org/ | 			#nav-search       |#q  |Abcd         |div[class='alert alert-warning'][role='alert']|Abcd     |
+	| https://openweathermap.org/ | 			#nav-search       |#q  |London       | a                                            |London   |
+	| https://openweathermap.org/ | 			#nav-search       |#q  |Pheonix      | a                                            |Pheonix  |
 	
